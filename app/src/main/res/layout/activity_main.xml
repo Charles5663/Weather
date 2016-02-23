@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <RelativeLayout
+        android:id="@+id/title_layout"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/colorPrimaryDark">
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginLeft="6dp"
+            android:layout_marginStart="6dp"
+            android:id="@+id/choose_city"
+            android:text="选择城市"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="天津天气"
+            android:textSize="24sp"
+            android:textColor="@color/colorFont"
+            android:id="@+id/city_name" />
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_below="@+id/title_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_alignParentBottom="true"
+        android:background="@color/colorPrimaryDark">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/current_date"
+            android:textSize="30sp"
+            android:textColor="@color/colorFont"
+            android:text="2015年12月25日"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/weather_text"
+            android:textSize="40dp"
+            android:layout_gravity="center"
+            android:textColor="@color/colorFont"
+            android:text="大雪转小雪"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorFont"
+            android:textSize="30sp"
+            android:text="目前温度:"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorFont"
+            android:id="@+id/current_temp"
+            android:textSize="30sp"
+            android:text="-2℃"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorFont"
+            android:textSize="30sp"
+            android:text="最低气温:"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorFont"
+            android:id="@+id/temp_low"
+            android:textSize="30sp"
+            android:text="-6℃"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorFont"
+            android:textSize="30sp"
+            android:text="最高气温："/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorFont"
+            android:id="@+id/temp_high"
+            android:textSize="30sp"
+            android:text="-1℃"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorFont"
+            android:id="@+id/wind_text"
+            android:textSize="30sp"
+            android:text="北风"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorFont"
+            android:id="@+id/wind_level"
+            android:textSize="30sp"
+            android:text="3-4级"/>
+    </LinearLayout>
+
+
+</RelativeLayout>
+
+
